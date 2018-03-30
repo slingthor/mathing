@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathing", "mathing\mathing.vcxproj", "{2A87F915-9616-4A4C-B112-75304798F3CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|ARM.Build.0 = Debug|ARM
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|x64.ActiveCfg = Debug|x64
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|x64.Build.0 = Debug|x64
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Debug|x86.Build.0 = Debug|Win32
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|ARM.ActiveCfg = Release|ARM
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|ARM.Build.0 = Release|ARM
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x64.ActiveCfg = Release|x64
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x64.Build.0 = Release|x64
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x86.ActiveCfg = Release|Win32
+		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02332B65-2E2A-4926-8E57-3890776AE585}
+	EndGlobalSection
+EndGlobal
