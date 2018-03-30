@@ -24,8 +24,8 @@
     <ClCompile Include="Math\general.cpp">
       <Filter>Math</Filter>
     </ClCompile>
-    <ClCompile Include="right_triangle_2D.cpp" />
-    <ClCompile Include="Line_2D.cpp" />
+    <ClCompile Include="Math\Line_2D.cpp" />
+    <ClCompile Include="Math\right_triangle_2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mathing.h" />
@@ -39,7 +39,7 @@
     </ClInclude>
     <ClInclude Include="Math\general.h" />
     <ClInclude Include="Math\trig.h" />
-    <ClInclude Include="right_triangle_2D.h" />
-    <ClInclude Include="Line_2D.h" />
+    <ClInclude Include="Math\Line_2D.h" />
+    <ClInclude Include="Math\right_triangle_2D.h" />
   </ItemGroup>
 </Project>

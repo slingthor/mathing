@@ -14,6 +14,9 @@
     <ClCompile Include="general_test.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="line_2d_test.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

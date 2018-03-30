@@ -51,3 +51,17 @@ TEST(trig, sinZero)
 	bool isTrue = math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
+
+TEST(acos, one)
+{
+	const float actual = math::acos(1);
+	const float isTrue = math::abs(actual - 0) < acceptable_error;
+	EXPECT_TRUE(isTrue);
+}
+
+TEST(asin, one)
+{
+	const float actual = math::asin(1);
+	const float isTrue = math::abs(actual - math::pi/2) < acceptable_error;
+	EXPECT_TRUE(isTrue);
+}
