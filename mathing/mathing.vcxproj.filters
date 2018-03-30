@@ -5,5 +5,41 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{97a712c3-0a8d-4d82-b042-9b8950c7a1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Headers">
+      <UniqueIdentifier>{f57edc90-052c-43d8-8887-e63fbfa0af00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mathing.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Math\triangle_2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Trig.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\general.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="right_triangle_2D.cpp" />
+    <ClCompile Include="Line_2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mathing.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Math\triangle_2D.h">
+      <Filter>Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\vector_2d.h">
+      <Filter>Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\general.h" />
+    <ClInclude Include="Math\trig.h" />
+    <ClInclude Include="right_triangle_2D.h" />
+    <ClInclude Include="Line_2D.h" />
   </ItemGroup>
 </Project>

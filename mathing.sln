@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathing", "mathing\mathing.vcxproj", "{2A87F915-9616-4A4C-B112-75304798F3CE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathing_test", "mathing_test\mathing_test.vcxproj", "{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -27,6 +29,16 @@ Global
 		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x64.Build.0 = Release|x64
 		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x86.ActiveCfg = Release|Win32
 		{2A87F915-9616-4A4C-B112-75304798F3CE}.Release|x86.Build.0 = Release|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Debug|ARM.ActiveCfg = Debug|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Debug|x64.ActiveCfg = Debug|x64
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Debug|x64.Build.0 = Debug|x64
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Debug|x86.Build.0 = Debug|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|ARM.ActiveCfg = Release|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x64.ActiveCfg = Release|x64
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x64.Build.0 = Release|x64
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x86.ActiveCfg = Release|Win32
+		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
