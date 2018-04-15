@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "trig.h"
-
+#include "general.h"
 namespace math
 {
 	/// <summary>
