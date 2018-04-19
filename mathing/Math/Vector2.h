@@ -9,6 +9,8 @@ namespace math
 			y_{ y }
 		{}
 
+		Vector2() = default;
+
 		auto X() const -> float { return x_; }
 		auto Y() const -> float { return y_; }
 		auto SetX(const float x) -> void { x_ = x; }

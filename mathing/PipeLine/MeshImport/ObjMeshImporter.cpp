@@ -3,11 +3,12 @@
 #include <fstream>
 #include <filesystem>
 #include <iostream>
-#include "../mathing/Math/Vector3.h"
+#include <sstream>
 
 namespace AssetImporting
 {
 	using namespace std::experimental;
+	using namespace math;
 
 	ObjMeshImporter::ObjMeshImporter()
 	{
@@ -44,11 +45,6 @@ namespace AssetImporting
 		return elems;
 	}
 
-	auto stringToFloat(const std::string& str) -> float
-	{
-		
-	}
-
 	auto ObjMeshImporter::Import(std::string filePath) -> Mesh
 	{
 		//todo turn this into an assertion
@@ -79,7 +75,7 @@ namespace AssetImporting
 					switch (StringToLineType(firstWord))
 					{
 					case Vertex:
-						Vector3 vec = Vector3(0f, 0f, 0f);
+						Vector3 vec = Vector3(0.0f, 0.0f, 0.0f);
 						auto vertex = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
 					case Normal: break;
 					case TextureCoordinate: break;

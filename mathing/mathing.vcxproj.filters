@@ -24,6 +24,12 @@
     <ClCompile Include="Math\Matrix3.cpp" />
     <ClCompile Include="Math\Matrix4.cpp" />
     <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Geometry\Mesh\Mesh.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\AssetImporting.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\MeshImporter.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\ObjMeshImporter.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mathing.h" />
@@ -34,5 +40,11 @@
     <ClInclude Include="Math\Matrix3.h" />
     <ClInclude Include="Math\Matrix4.h" />
     <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Geometry\Mesh\Mesh.h" />
+    <ClInclude Include="PipeLine\MeshImport\AssetImporting.h" />
+    <ClInclude Include="PipeLine\MeshImport\MeshImporter.h" />
+    <ClInclude Include="PipeLine\MeshImport\ObjMeshImporter.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Math\Vector4.h" />
   </ItemGroup>
 </Project>

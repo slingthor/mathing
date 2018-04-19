@@ -188,20 +188,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Geometry\Mesh\Mesh.h" />
     <ClInclude Include="mathing.h" />
     <ClInclude Include="Math\general.h" />
     <ClInclude Include="Math\Matrix3.h" />
     <ClInclude Include="Math\trig.h" />
     <ClInclude Include="Math\Matrix4.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Math\Vector4.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PipeLine\MeshImport\AssetImporting.h" />
+    <ClInclude Include="PipeLine\MeshImport\MeshImporter.h" />
+    <ClInclude Include="PipeLine\MeshImport\ObjMeshImporter.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Math\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Geometry\Mesh\Mesh.cpp" />
     <ClCompile Include="Math\general.cpp" />
     <ClCompile Include="mathing.cpp" />
     <ClCompile Include="Math\Matrix3.cpp" />
     <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -212,6 +221,9 @@
     </ClCompile>
     <ClCompile Include="Math\Trig.cpp" />
     <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\AssetImporting.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\MeshImporter.cpp" />
+    <ClCompile Include="PipeLine\MeshImport\ObjMeshImporter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,6 +20,8 @@ namespace math
 			z_{ z }
 		{}
 
+		Vector3() = default;
+
 		auto X() const -> float { return x_; }
 		auto Y() const -> float { return y_; }
 		auto Z() const -> float { return z_; }
