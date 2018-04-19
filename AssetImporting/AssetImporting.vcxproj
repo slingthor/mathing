@@ -27,9 +27,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2a87f915-9616-4a4c-b112-75304798f3ce}</ProjectGuid>
+    <ProjectGuid>{3d68cb22-6242-40b6-86cf-f9cdb29b9519}</ProjectGuid>
     <Keyword>StaticLibrary</Keyword>
-    <RootNamespace>mathing</RootNamespace>
+    <RootNamespace>AssetImporting</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
@@ -188,20 +188,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="mathing.h" />
-    <ClInclude Include="Math\general.h" />
-    <ClInclude Include="Math\Matrix3.h" />
-    <ClInclude Include="Math\trig.h" />
-    <ClInclude Include="Math\Matrix4.h" />
+    <ClInclude Include="AssetImporting.h" />
+    <ClInclude Include="MeshImport\MeshImporter.h" />
+    <ClInclude Include="Mesh\Mesh.h" />
+    <ClInclude Include="MeshImport\ObjMeshImporter.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="Math\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Math\general.cpp" />
-    <ClCompile Include="mathing.cpp" />
-    <ClCompile Include="Math\Matrix3.cpp" />
-    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="AssetImporting.cpp" />
+    <ClCompile Include="MeshImport\MeshImporter.cpp" />
+    <ClCompile Include="Mesh\Mesh.cpp" />
+    <ClCompile Include="MeshImport\ObjMeshImporter.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -210,8 +208,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Math\Trig.cpp" />
-    <ClCompile Include="Math\Vector2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

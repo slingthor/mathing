@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathing", "mathing\mathing.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathing_test", "mathing_test\mathing_test.vcxproj", "{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetImporting", "AssetImporting\AssetImporting.vcxproj", "{3D68CB22-6242-40B6-86CF-F9CDB29B9519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -39,6 +41,18 @@ Global
 		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x64.Build.0 = Release|x64
 		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x86.ActiveCfg = Release|Win32
 		{BC4A9ABE-5F98-46E0-B435-EC9A42CDCBAE}.Release|x86.Build.0 = Release|Win32
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|ARM.Build.0 = Debug|ARM
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|x64.ActiveCfg = Debug|x64
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|x64.Build.0 = Debug|x64
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Debug|x86.Build.0 = Debug|Win32
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|ARM.ActiveCfg = Release|ARM
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|ARM.Build.0 = Release|ARM
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|x64.ActiveCfg = Release|x64
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|x64.Build.0 = Release|x64
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|x86.ActiveCfg = Release|Win32
+		{3D68CB22-6242-40B6-86CF-F9CDB29B9519}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

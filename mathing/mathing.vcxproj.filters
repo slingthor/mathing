@@ -23,6 +23,7 @@
     </ClCompile>
     <ClCompile Include="Math\Matrix3.cpp" />
     <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mathing.h" />
@@ -32,5 +33,6 @@
     <ClInclude Include="Math\trig.h" />
     <ClInclude Include="Math\Matrix3.h" />
     <ClInclude Include="Math\Matrix4.h" />
+    <ClInclude Include="Math\Vector2.h" />
   </ItemGroup>
 </Project>
