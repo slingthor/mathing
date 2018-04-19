@@ -1,7 +1,8 @@
 #pragma once
-#include "Geometry/Mesh/Mesh.h"
+#include "../../Geometry/Mesh/Mesh.h"
 #include "MeshImporter.h"
 #include <unordered_map>
+#include <memory>
 
 namespace AssetImporting
 {
@@ -10,7 +11,6 @@ namespace AssetImporting
 	{
 	public:
 		ObjMeshImporter();
-		~ObjMeshImporter() override;
 		enum LineType
 		{
 			Vertex,
@@ -18,14 +18,14 @@ namespace AssetImporting
 			TextureCoordinate,
 			Other
 		};
-		auto Import(std::string filePath) -> Mesh override;
+		auto Import(std::string filePath) -> std::shared_ptr<Mesh> override;
 	private:
 		std::unordered_map<std::string, LineType> stringToLineTypeMap{};
-		auto StringToLineType(const std::string& str)->ObjMeshImporter::LineType;
+		auto StringToLineType(const std::string& str)->LineType;
 
 		template<typename Out>
 		auto Split(const std::string &s, char delim, Out result) -> void;
-		auto ObjMeshImporter::Split(const std::string &s, char delim)->std::vector<std::string>;
+		auto Split(const std::string &s, char delim)->std::vector<std::string>;
 	};
 }
 

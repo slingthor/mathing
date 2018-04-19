@@ -45,7 +45,7 @@ namespace AssetImporting
 		return elems;
 	}
 
-	auto ObjMeshImporter::Import(std::string filePath) -> Mesh
+	auto ObjMeshImporter::Import(std::string filePath) -> std::shared_ptr<Mesh>
 	{
 		//todo turn this into an assertion
 		if (!filesystem::exists(filePath))
@@ -60,9 +60,7 @@ namespace AssetImporting
 		}
 		std::string line;
 
-		std::vector<Vector3> vertices {};
-		std::vector<Vector3> normals {};
-		std::vector<Vector2> textureCoordinates {};
+		auto mesh = std::make_shared<Mesh>();
 		try
 		{
 			while (std::getline(inFile, line))
@@ -75,26 +73,28 @@ namespace AssetImporting
 					switch (StringToLineType(firstWord))
 					{
 					case Vertex:
-						const auto vertex = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
-						vertices.push_back(vertex);
+						const auto vertex = Vector3{ std::stof(elems[2]), std::stof(elems[3]), std::stof(elems[4]) };
+						mesh->Vertices().push_back(vertex);
 						break;
 					case Normal:
-						const auto normal = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
-						normals.push_back(normal);
+						const auto normal = Vector3{ std::stof(elems[2]), std::stof(elems[3]), std::stof(elems[4]) };
+						mesh->Normals().push_back(normal);
 						break;
 					case TextureCoordinate:
-						const auto coordinate = Vector2{ std::stof(elems[1]), std::stof(elems[2]) };
-						textureCoordinates.push_back(coordinate);
+						const auto coordinate = Vector2{ std::stof(elems[2]), std::stof(elems[3]) };
+						mesh->TextureCoordinates().push_back(coordinate);
 						break;
 					case Other: break;
 					default:;
 					}
 				}
 			}
+
 		}
 		catch(std::exception ex)
 		{
 			std::cout << ex.what();
 		}
+		return mesh;
 	}
 }

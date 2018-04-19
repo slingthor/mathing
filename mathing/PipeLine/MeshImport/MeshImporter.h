@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <memory>
 
 namespace AssetImporting
 {
@@ -10,6 +11,6 @@ namespace AssetImporting
 	public:
 		MeshImporter();
 		virtual ~MeshImporter() = 0;
-		virtual auto Import(std::string filePath)->Mesh = 0;
+		virtual auto Import(std::string filePath)->std::shared_ptr<Mesh> = 0;
 	};
 }
