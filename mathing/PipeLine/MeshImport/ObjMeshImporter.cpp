@@ -75,10 +75,17 @@ namespace AssetImporting
 					switch (StringToLineType(firstWord))
 					{
 					case Vertex:
-						Vector3 vec = Vector3(0.0f, 0.0f, 0.0f);
-						auto vertex = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
-					case Normal: break;
-					case TextureCoordinate: break;
+						const auto vertex = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
+						vertices.push_back(vertex);
+						break;
+					case Normal:
+						const auto normal = Vector3{ std::stof(elems[1]), std::stof(elems[2]), std::stof(elems[3]) };
+						normals.push_back(normal);
+						break;
+					case TextureCoordinate:
+						const auto coordinate = Vector2{ std::stof(elems[1]), std::stof(elems[2]) };
+						textureCoordinates.push_back(coordinate);
+						break;
 					case Other: break;
 					default:;
 					}
