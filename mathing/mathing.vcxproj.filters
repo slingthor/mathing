@@ -47,7 +47,6 @@
     <ClInclude Include="PipeLine\MeshImport\ObjMeshImporter.h" />
     <ClInclude Include="Math\Vector3.h" />
     <ClInclude Include="Math\Vector4.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\json.hpp" />
     <ClInclude Include="Math\Quaternion.h" />
   </ItemGroup>
 </Project>

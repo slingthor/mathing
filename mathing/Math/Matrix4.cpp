@@ -80,7 +80,7 @@ namespace Math
 		}
 	}
 
-	auto Matrix4::row(const SIZE_T index) const -> Vector4
+	auto Matrix4::Row(const SIZE_T index) const -> Vector4
 	{
 #if !PRODUCTION
 		assert(index < 4);
@@ -91,7 +91,7 @@ namespace Math
 		};
 	}
 
-	auto Matrix4::column(const SIZE_T index) const -> Vector4
+	auto Matrix4::Column(const SIZE_T index) const -> Vector4
 	{
 #if !PRODUCTION
 		assert(index < 4);
@@ -105,7 +105,7 @@ namespace Math
 		};
 	}
 
-	auto Matrix4::determinant() const noexcept -> float
+	auto Matrix4::Determinant() const noexcept -> float
 	{
 		const auto det0 = matrix[0][0] * (matrix[1][1] * matrix[2][2] - matrix[2][1] * matrix[1][2]);
 		const auto det1 = matrix[1][0] * (matrix[0][1] * matrix[2][2] - matrix[2][1] * matrix[0][2]);
@@ -114,14 +114,14 @@ namespace Math
 		return det0 - det1 + det2;
 	}
 
-	auto Matrix4::inverse() const noexcept -> Matrix4
+	auto Matrix4::Inverse() const noexcept -> Matrix4
 	{
-		const auto a = column(0);
-		const auto b = column(1);
-		const auto c = column(2);
-		const auto d = column(3);
+		const auto a = Column(0);
+		const auto b = Column(1);
+		const auto c = Column(2);
+		const auto d = Column(3);
 
-		const auto bottomRow = row(3);
+		const auto bottomRow = Row(3);
 
 		auto s = a.Cross(b);
 		auto t = c.Cross(d);

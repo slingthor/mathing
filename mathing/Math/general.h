@@ -3,7 +3,7 @@
 
 namespace Math
 {
-	float pow(float number, float exponent);
-	float abs(float number);
-	float sqrt(float number);
+	float Pow(float number, float exponent);
+	float Abs(float number);
+	float Sqrt(float number);
 }

@@ -188,7 +188,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\json.hpp" />
     <ClInclude Include="Geometry\Mesh\Mesh.h" />
     <ClInclude Include="mathing.h" />
     <ClInclude Include="Math\general.h" />

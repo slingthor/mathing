@@ -6,10 +6,10 @@ namespace Math
 {
 	auto Vector3::Distance(const Vector3& vector1, const Vector3& vector2) -> float
 	{
-		return sqrt(
-			pow(vector2.x_ - vector1.x_, 2) +
-			pow(vector2.y_ - vector1.y_, 2) +
-			pow(vector2.z_ - vector1.z_, 2)
+		return Sqrt(
+			Pow(vector2.x_ - vector1.x_, 2) +
+			Pow(vector2.y_ - vector1.y_, 2) +
+			Pow(vector2.z_ - vector1.z_, 2)
 		);
 	}
 
@@ -20,18 +20,18 @@ namespace Math
 
 	auto Vector3::Magnitude() const -> float
 	{
-		return sqrt(
-			pow(X(), 2) +
-			pow(Y(), 2) +
-			pow(Z(), 2)
+		return Sqrt(
+			Pow(X(), 2) +
+			Pow(Y(), 2) +
+			Pow(Z(), 2)
 		);
 	}
 
 	auto Vector3::SquaredMagnitude() const -> float
 	{
-		return pow(X(), 2) +
-			pow(Y(), 2) +
-			pow(Z(), 2);
+		return Pow(X(), 2) +
+			Pow(Y(), 2) +
+			Pow(Z(), 2);
 	}
 
 	auto Vector3::Normalized() const -> Vector3

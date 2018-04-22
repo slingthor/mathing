@@ -10,7 +10,7 @@ namespace Math
 	/// <param name="number">Number to be raised into a power</param>
 	/// <param name="exponent">The exponent</param>
 	/// <returns></returns>
-	float pow(const float number, const float exponent)
+	float Pow(const float number, const float exponent)
 	{
 		float total = 1;
 		if (exponent > 0)
@@ -30,7 +30,7 @@ namespace Math
 		return total;
 	}
 
-	float abs(const float number)
+	float Abs(const float number)
 	{
 		if(number < 0)
 		{
@@ -39,7 +39,7 @@ namespace Math
 		return number;
 	}
 
-	float sqrt(const float number)
+	float Sqrt(const float number)
 	{
 		union
 		{

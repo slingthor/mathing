@@ -144,9 +144,9 @@ namespace Math
 
 	auto Quaternion::ToMatrix3() const -> Matrix3
 	{
-		const auto twoXSquared { 2 * pow(x_, 2) };
-		const auto twoYSquared { 2 * pow(y_, 2) };
-		const auto twoZSquared { 2 * pow(x_, 2) };
+		const auto twoXSquared { 2 * Pow(x_, 2) };
+		const auto twoYSquared { 2 * Pow(y_, 2) };
+		const auto twoZSquared { 2 * Pow(x_, 2) };
 		const auto twoXY { 2 * x_ * y_ };
 		const auto twoWZ { 2 * w_ * z_ };
 		const auto twoXZ { 2 * x_ * z_ };
@@ -172,9 +172,9 @@ namespace Math
 
 	auto Quaternion::ToMatrix4() const -> Matrix4
 	{
-		const auto twoXSquared{ 2 * pow(x_, 2) };
-		const auto twoYSquared{ 2 * pow(y_, 2) };
-		const auto twoZSquared{ 2 * pow(x_, 2) };
+		const auto twoXSquared{ 2 * Pow(x_, 2) };
+		const auto twoYSquared{ 2 * Pow(y_, 2) };
+		const auto twoZSquared{ 2 * Pow(x_, 2) };
 		const auto twoXY{ 2 * x_ * y_ };
 		const auto twoWZ{ 2 * w_ * z_ };
 		const auto twoXZ{ 2 * x_ * z_ };
@@ -203,11 +203,11 @@ namespace Math
 
 	auto Quaternion::Magnitude() const -> float
 	{
-		return sqrt(
-			pow(x_, 2) +
-			pow(y_, 2) +
-			pow(z_, 2) +
-			pow(w_, 2)
+		return Sqrt(
+			Pow(x_, 2) +
+			Pow(y_, 2) +
+			Pow(z_, 2) +
+			Pow(w_, 2)
 		);
 	}
 

@@ -102,7 +102,7 @@ namespace Math
 	auto acos(float number) -> float
 	{
 		const auto negate = float(number < 0);
-		number = abs(number);
+		number = Abs(number);
 		float ret = -0.0187293;
 		ret = ret * number;
 		ret = ret + 0.0742610;
@@ -110,7 +110,7 @@ namespace Math
 		ret = ret - 0.2121144;
 		ret = ret * number;
 		ret = ret + 1.5707288;
-		ret = ret * sqrt(1.0 - number);
+		ret = ret * Sqrt(1.0 - number);
 		ret = ret - 2 * negate * ret;
 		return negate * pi + ret;
 	}
