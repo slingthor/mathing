@@ -188,6 +188,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\json.hpp" />
     <ClInclude Include="Geometry\Mesh\Mesh.h" />
     <ClInclude Include="mathing.h" />
     <ClInclude Include="Math\general.h" />
@@ -200,6 +201,7 @@
     <ClInclude Include="PipeLine\MeshImport\AssetImporting.h" />
     <ClInclude Include="PipeLine\MeshImport\MeshImporter.h" />
     <ClInclude Include="PipeLine\MeshImport\ObjMeshImporter.h" />
+    <ClInclude Include="Math\Quaternion.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Math\Vector2.h" />
   </ItemGroup>
@@ -224,6 +226,7 @@
     <ClCompile Include="PipeLine\MeshImport\AssetImporting.cpp" />
     <ClCompile Include="PipeLine\MeshImport\MeshImporter.cpp" />
     <ClCompile Include="PipeLine\MeshImport\ObjMeshImporter.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

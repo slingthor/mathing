@@ -2,7 +2,7 @@
 #include "general.h"
 #include "Vector3.h"
 
-namespace math
+namespace Math
 {
 	auto Vector3::Distance(const Vector3& vector1, const Vector3& vector2) -> float
 	{

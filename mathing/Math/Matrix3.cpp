@@ -3,7 +3,7 @@
 #include <cassert>
 #include "Vector3.h"
 
-namespace math
+namespace Math
 {
 	auto operator*(const Matrix3& lhs, const Matrix3& rhs) -> Matrix3 
 	{

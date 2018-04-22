@@ -2,7 +2,7 @@
 #include "general.h"
 #pragma once
 
-namespace math
+namespace Math
 {
 	/// <summary>
 	/// Calculates positive power.

@@ -30,6 +30,7 @@
     <ClCompile Include="PipeLine\MeshImport\ObjMeshImporter.cpp" />
     <ClCompile Include="Math\Vector3.cpp" />
     <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mathing.h" />
@@ -46,5 +47,7 @@
     <ClInclude Include="PipeLine\MeshImport\ObjMeshImporter.h" />
     <ClInclude Include="Math\Vector3.h" />
     <ClInclude Include="Math\Vector4.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\json.hpp" />
+    <ClInclude Include="Math\Quaternion.h" />
   </ItemGroup>
 </Project>

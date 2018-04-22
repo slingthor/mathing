@@ -11,6 +11,9 @@
     <ClCompile Include="AssetImportTest.cpp">
       <Filter>PipeLineTests</Filter>
     </ClCompile>
+    <ClCompile Include="Vector3_test.cpp">
+      <Filter>MathTests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

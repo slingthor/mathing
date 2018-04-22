@@ -1,14 +1,14 @@
 #include "pch.h"
 #include "trig.h"
 #include "general.h"
-namespace math
+namespace Math
 {
 	/// <summary>
 	/// Given radians, returns the cosine
 	/// </summary>
 	/// <param name="radians">radians</param>
 	/// <returns>The Cosine</returns>
-	float cos(float radians)
+	auto Cos(float radians) -> float
 	{
 		radians += 1.57079632;
 		if (radians < -3.14159265)
@@ -48,11 +48,11 @@ namespace math
 	}
 
 	/// <summary>
-	/// Given radians, returns the sin
+	/// Given radians, returns the Sin
 	/// </summary>
 	/// <param name="radians">Radians</param>
 	/// <returns>The sine</returns>
-	float sin(float radians)
+	auto Sin(float radians) -> float
 	{
 		if (radians < -3.14159265)
 		{
@@ -99,8 +99,9 @@ namespace math
 	/// </summary>
 	/// <param name="number">A cosine number</param>
 	/// <returns>The angle in radians</returns>
-	float acos(float number) {
-		const float negate = float(number < 0);
+	auto acos(float number) -> float
+	{
+		const auto negate = float(number < 0);
 		number = abs(number);
 		float ret = -0.0187293;
 		ret = ret * number;
@@ -119,9 +120,9 @@ namespace math
 	/// </summary>
 	/// <param name="number"></param>
 	/// <returns></returns>
-	float asin(float number)
+	auto asin(float number) -> float
 	{
-		const float half_pi = pi / 2;
+		const auto half_pi = pi / 2;
 		return half_pi - acos(number);
 	}
 }

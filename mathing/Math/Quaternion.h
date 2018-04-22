@@ -1,6 +1,6 @@
 #pragma once
 
-namespace math
+namespace Math
 {
 	class Vector3;
 	class Vector4;
@@ -40,7 +40,7 @@ namespace math
 
 		auto Magnitude() const -> float;
 		auto Normalized() const->Quaternion;
-		auto Normalize() const;
+		auto Normalize() -> void;
 
 	private:
 		float x_;

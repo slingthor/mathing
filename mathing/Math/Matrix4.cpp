@@ -2,7 +2,7 @@
 #include "Matrix4.h"
 #include "Vector4.h"
 #include <cassert>
-namespace math
+namespace Math
 {
 	auto operator*(const Matrix4& lhs, const Matrix4& rhs) -> Matrix4
 	{

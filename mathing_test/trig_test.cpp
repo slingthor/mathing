@@ -6,62 +6,62 @@ const float acceptable_error = 0.001f;
 
 TEST(trig, cosPositiveOne) 
 {
-	float actual = math::cos(0);
+	float actual = Math::Cos(0);
 	float expected = 1;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(trig, cosNegativeOne)
 {
-	float actual = math::cos(math::pi);
+	float actual = Math::Cos(Math::pi);
 	float expected = -1;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
  
 TEST(trig, cosZero)
 {
-	float actual = math::cos(math::pi/2);
+	float actual = Math::Cos(Math::pi/2);
 	float expected = 0;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(trig, sinPositiveOne)
 {
-	float actual = math::sin(math::pi/2);
+	float actual = Math::Sin(Math::pi/2);
 	float expected = 1;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(trig, sinNegativeOne)
 {
-	float actual = math::sin(1.5*math::pi);
+	float actual = Math::Sin(1.5*Math::pi);
 	float expected = -1;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(trig, sinZero)
 {
-	float actual = math::sin(0);
+	float actual = Math::Sin(0);
 	float expected = 0;
-	bool isTrue = math::abs(actual - expected) < acceptable_error;
+	bool isTrue = Math::abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(acos, one)
 {
-	const float actual = math::acos(1);
-	const float isTrue = math::abs(actual - 0) < acceptable_error;
+	const float actual = Math::acos(1);
+	const float isTrue = Math::abs(actual - 0) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(asin, one)
 {
-	const float actual = math::asin(1);
-	const float isTrue = math::abs(actual - math::pi/2) < acceptable_error;
+	const float actual = Math::asin(1);
+	const float isTrue = Math::abs(actual - Math::pi/2) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }

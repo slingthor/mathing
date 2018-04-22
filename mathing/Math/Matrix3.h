@@ -1,5 +1,5 @@
 #pragma once
-namespace math
+namespace Math
 {
 	class Vector3;
 	class Matrix3

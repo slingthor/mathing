@@ -1,7 +1,7 @@
 #pragma once
 #include "Vector3.h"
 
-namespace math
+namespace Math
 {
 	class Vector4
 	{

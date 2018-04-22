@@ -1,6 +1,6 @@
 #pragma once
 
-namespace math
+namespace Math
 {
 	class Vector4;
 	class Matrix4
@@ -14,10 +14,10 @@ namespace math
 		                   float n03, float n13, float n23, float n33) noexcept;
 
 		explicit Matrix4(const float matrix[4][4]) noexcept;
-		auto row(SIZE_T index) const -> Vector4;
-		auto column(SIZE_T index) const -> Vector4;
-		auto determinant() const noexcept -> float;
-		auto inverse() const noexcept -> Matrix4;
+		auto Row(SIZE_T index) const -> Vector4;
+		auto Column(SIZE_T index) const -> Vector4;
+		auto Determinant() const noexcept -> float;
+		auto Inverse() const noexcept -> Matrix4;
 		auto operator ()(SIZE_T x, SIZE_T y) -> float&;
 		auto operator ()(SIZE_T x, SIZE_T y) const -> const float&;
 	private:

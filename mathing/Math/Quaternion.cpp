@@ -7,7 +7,7 @@
 #include "Math/Matrix3.h"
 #include "Math/Matrix4.h"
 
-namespace math
+namespace Math
 {
 	auto operator+(const Quaternion & lhs, const Quaternion & rhs) -> Quaternion
 	{
@@ -50,11 +50,11 @@ namespace math
 
 	Quaternion::Quaternion(const Vector3& axis, float angle)
 	{
-		const auto sinEncoding = sin(angle / 2);
+		const auto sinEncoding = Sin(angle / 2);
 		x_ = axis.X() * sinEncoding;
 		y_ = axis.Y() * sinEncoding;
 		z_ = axis.Z() * sinEncoding;
-		w_ = cos(angle / 2);
+		w_ = Cos(angle / 2);
 
 	}
 
@@ -68,12 +68,12 @@ namespace math
 
 	Quaternion::Quaternion(const Vector3 & eulerAngles)
 	{
-		const auto cosXHalf { cos(eulerAngles.X() / 2) };
-		const auto cosYHalf { cos(eulerAngles.Y() / 2) };
-		const auto cosZHalf { cos(eulerAngles.Z() / 2) };
-		const auto sinXHalf { sin(eulerAngles.X() / 2) };
-		const auto sinYHalf { sin(eulerAngles.Y() / 2) };
-		const auto sinZHalf { sin(eulerAngles.Z() / 2) };
+		const auto cosXHalf { Cos(eulerAngles.X() / 2) };
+		const auto cosYHalf { Cos(eulerAngles.Y() / 2) };
+		const auto cosZHalf { Cos(eulerAngles.Z() / 2) };
+		const auto sinXHalf { Sin(eulerAngles.X() / 2) };
+		const auto sinYHalf { Sin(eulerAngles.Y() / 2) };
+		const auto sinZHalf { Sin(eulerAngles.Z() / 2) };
 
 		w_ = cosXHalf * cosYHalf * cosZHalf - sinXHalf * sinYHalf * sinZHalf;
 		x_ = sinXHalf * cosYHalf * cosZHalf + cosXHalf * sinYHalf * sinZHalf;
@@ -222,7 +222,7 @@ namespace math
 		};
 	}
 
-	auto Quaternion::Normalize()
+	auto Quaternion::Normalize() -> void
 	{
 		const auto magnitude{ Magnitude() };
 		x_ = x_ / magnitude;

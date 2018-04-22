@@ -8,7 +8,7 @@
 namespace AssetImporting
 {
 	using namespace std::experimental;
-	using namespace math;
+	using namespace Math;
 
 	ObjMeshImporter::ObjMeshImporter()
 	{
