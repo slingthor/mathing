@@ -62,6 +62,18 @@ namespace Math
 		return Dot(*this, vector);
 	}
 
+	auto Vector4::Cross(const Vector4& vector1, const Vector4& vector2) -> Vector4
+	{
+		auto x = vector1.Y() * vector2.Z() - vector1.Z() * vector2.Y();
+		auto y = vector2.X() * vector1.Z() - vector1.X() * vector2.Z();
+		auto z = vector1.X() * vector2.Y() - vector2.X() * vector1.Y();
+		return { x,y,z,0.0f };
+	}
+	auto Vector4::Cross(const Vector4& vector) const -> Vector4
+	{
+		return Cross(*this, vector);
+	}
+
 	auto Vector4::Projection(const Vector4& from, const Vector4& onto) -> Vector4
 	{
 		return (onto * Dot(from, onto)) / Dot(onto, onto);
