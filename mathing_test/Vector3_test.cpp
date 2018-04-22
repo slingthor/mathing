@@ -205,3 +205,17 @@ TEST(Vector3, DivisionAssignment)
 	vector *= { Vector3(0.5f, 0.5f, 2.0f)};
 	EXPECT_EQ(vector, Vector3(2.0f, 2.0f, 2.0f));
 }
+
+TEST(Vector3, ScalarMultiplicationAssignment)
+{
+	auto vector{ Vector3(1.0f, 1.0f, 1.0f) };
+	vector *= 2.0f;
+	EXPECT_EQ(vector, Vector3(2.0f, 2.0f, 2.0f));
+}
+
+TEST(Vector3, ScalarDivisionAssignment)
+{
+	auto vector{ Vector3(4.0f, 4.0f, 4.0f) };
+	vector /= 2.0f;
+	EXPECT_EQ(vector, Vector3(2.0f, 2.0f, 2.0f));
+}

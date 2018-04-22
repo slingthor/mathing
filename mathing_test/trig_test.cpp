@@ -52,14 +52,14 @@ TEST(trig, sinZero)
 	EXPECT_TRUE(isTrue);
 }
 
-TEST(acos, one)
+TEST(trig, aCos)
 {
 	const float actual = Math::acos(1.0f);
 	const float isTrue = Math::Abs(actual - 0) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
-TEST(asin, one)
+TEST(trig, aSin)
 {
 	const float actual = Math::asin(1.0f);
 	const float isTrue = Math::Abs(actual - Math::pi/2) < acceptable_error;
