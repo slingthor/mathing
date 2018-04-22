@@ -2,16 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="trig_test.cpp">
+    <ClCompile Include="Vector3Tests.cpp">
       <Filter>MathTests</Filter>
     </ClCompile>
-    <ClCompile Include="general_test.cpp">
+    <ClCompile Include="TrigonometryTests.cpp">
       <Filter>MathTests</Filter>
     </ClCompile>
-    <ClCompile Include="AssetImportTest.cpp">
+    <ClCompile Include="GeneralTests.cpp">
+      <Filter>MathTests</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetImportTests.cpp">
       <Filter>PipeLineTests</Filter>
     </ClCompile>
-    <ClCompile Include="Vector3_test.cpp">
+    <ClCompile Include="Vector4Tests.cpp">
       <Filter>MathTests</Filter>
     </ClCompile>
   </ItemGroup>

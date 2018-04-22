@@ -202,7 +202,7 @@ TEST(Vector3, MultiplicationAssignment)
 TEST(Vector3, DivisionAssignment)
 {
 	auto vector{ Vector3(1.0f,1.0f,1.0f) };
-	vector *= { Vector3(0.5f, 0.5f, 2.0f)};
+	vector *= { Vector3(0.5f, 0.5f, 0.5f)};
 	EXPECT_EQ(vector, Vector3(2.0f, 2.0f, 2.0f));
 }
 
