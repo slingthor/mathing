@@ -128,7 +128,7 @@ namespace Math
 		auto u = a * bottomRow.Y() - b * bottomRow.X();
 		auto v = c * bottomRow.W() - d * bottomRow.Z();
 
-		const auto invDet = 1.0f / (s.Dot(v) + t.Dot(u));
+		const float invDet = 1.0f / (s.Dot(v) + t.Dot(u));
 		s *= invDet;
 		t *= invDet;
 		u *= invDet;

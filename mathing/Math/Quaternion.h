@@ -42,6 +42,21 @@ namespace Math
 		auto Normalized() const->Quaternion;
 		auto Normalize() -> void;
 
+
+		Quaternion(double, double, double, double) = delete;
+		Quaternion(int, int, int, int) = delete;
+		Quaternion(Vector3&, double) = delete;
+		Quaternion(Vector3&, int) = delete;
+
+		auto SetX(double) -> void = delete;
+		auto SetY(double) -> void = delete;
+		auto SetZ(double) -> void = delete;
+		auto SetW(double) -> void = delete;
+		auto SetX(int) -> void = delete;
+		auto SetY(int) -> void = delete;
+		auto SetZ(int) -> void = delete;
+		auto SetW(int) -> void = delete;
+
 	private:
 		float x_;
 		float y_;

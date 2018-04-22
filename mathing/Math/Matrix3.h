@@ -33,7 +33,18 @@ namespace Math
 		auto operator ()(SIZE_T x, SIZE_T y) -> float&;
 		auto operator ()(SIZE_T x, SIZE_T y) const -> const float&;
 
+
+		Matrix3(
+			double, double, double,
+			double, double, double,
+			double, double, double) = delete;
+
+		Matrix3(
+			int, int, int,
+			int, int, int,
+			int, int, int) = delete;
+
 	private:
-		float matrix[3][3];
+		float matrix[3][3] {};
 	};
 }

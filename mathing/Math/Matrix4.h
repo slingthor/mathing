@@ -20,6 +20,17 @@ namespace Math
 		auto Inverse() const noexcept -> Matrix4;
 		auto operator ()(SIZE_T x, SIZE_T y) -> float&;
 		auto operator ()(SIZE_T x, SIZE_T y) const -> const float&;
+
+		Matrix4(double, double, double, double,
+			double, double, double, double,
+			double, double, double, double,
+			double, double, double, double) = delete;
+
+		Matrix4(int, int, int, int,
+			int, int, int, int,
+			int, int, int, int,
+			int, int, int, int) = delete;
+
 	private:
 		float matrix[4][4];
 	};

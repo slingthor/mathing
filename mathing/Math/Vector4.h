@@ -27,16 +27,17 @@ namespace Math
 		Vector4() = default;
 
 		auto X() const -> float { return x_; }
-		auto SetX(const float x) -> void { x_ = x; }
 		auto Y() const -> float { return y_; }
-		auto SetY(const float y) -> void { y_ = y; }
 		auto Z() const -> float { return z_; }
-		auto SetZ(const float z) -> void { z_ = z; }
 		auto W() const -> float { return w_; }
+		auto SetX(const float x) -> void { x_ = x; }
+		auto SetY(const float y) -> void { y_ = y; }
+		auto SetZ(const float z) -> void { z_ = z; }
 		auto SetW(const float w) -> void { w_ = w; }
+
 		auto ToVector3() const -> Vector3 { return { x_, y_, z_ }; }
 
-		static auto Zero()->Vector4 { return { 0,0,0,0 }; }
+		static auto Zero()->Vector4 { return { 0.0f,0.0f,0.0f,0.0f }; }
 		static auto Distance(const Vector4& vector1, const Vector4& vector2) -> float;
 		auto Distance(const Vector4& other) const -> float;
 		auto Magnitude() const -> float;
@@ -55,6 +56,23 @@ namespace Math
 		auto operator/=(const Vector4& rhs)->Vector4&;
 		auto operator*=(float rhs)->Vector4&;
 		auto operator/=(float rhs)->Vector4&;
+
+		Vector4(double, double, double, double) = delete;
+		Vector4(int, int, int, int) = delete;
+
+		auto SetX(double) -> void = delete;
+		auto SetY(double) -> void = delete;
+		auto SetZ(double) -> void = delete;
+		auto SetW(double) -> void = delete;
+		auto SetX(int) -> void = delete;
+		auto SetY(int) -> void = delete;
+		auto SetZ(int) -> void = delete;
+		auto SetW(int) -> void = delete;
+
+		auto operator*=(double)->Vector4& = delete;
+		auto operator/=(double)->Vector4& = delete;
+		auto operator*=(int)->Vector4& = delete;
+		auto operator/=(int)->Vector4& = delete;
 
 	private:
 		float x_;

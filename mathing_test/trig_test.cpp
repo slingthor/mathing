@@ -6,7 +6,7 @@ const float acceptable_error = 0.001f;
 
 TEST(trig, cosPositiveOne) 
 {
-	float actual = Math::Cos(0);
+	float actual = Math::Cos(0.0f);
 	float expected = 1;
 	bool isTrue = Math::Abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
@@ -38,7 +38,7 @@ TEST(trig, sinPositiveOne)
 
 TEST(trig, sinNegativeOne)
 {
-	float actual = Math::Sin(1.5*Math::pi);
+	float actual = Math::Sin(1.5f*Math::pi);
 	float expected = -1;
 	bool isTrue = Math::Abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
@@ -46,7 +46,7 @@ TEST(trig, sinNegativeOne)
 
 TEST(trig, sinZero)
 {
-	float actual = Math::Sin(0);
+	float actual = Math::Sin(0.0f);
 	float expected = 0;
 	bool isTrue = Math::Abs(actual - expected) < acceptable_error;
 	EXPECT_TRUE(isTrue);
@@ -54,14 +54,14 @@ TEST(trig, sinZero)
 
 TEST(acos, one)
 {
-	const float actual = Math::acos(1);
+	const float actual = Math::acos(1.0f);
 	const float isTrue = Math::Abs(actual - 0) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }
 
 TEST(asin, one)
 {
-	const float actual = Math::asin(1);
+	const float actual = Math::asin(1.0f);
 	const float isTrue = Math::Abs(actual - Math::pi/2) < acceptable_error;
 	EXPECT_TRUE(isTrue);
 }

@@ -1,6 +1,7 @@
 #pragma once
 namespace Math
 {
+	// TODO: Tech debt - Debug time asserts for division by zero needed
 	class Vector3
 	{
 		friend auto operator==(const Vector3& lhs, const Vector3& rhs) -> bool;
@@ -12,7 +13,8 @@ namespace Math
 		friend auto operator*(const Vector3& lhs, float rhs)->Vector3;
 		friend auto operator/(const Vector3& lhs, const Vector3& rhs)->Vector3;
 		friend auto operator/(const Vector3& lhs, float rhs)->Vector3;
-		friend auto operator/(float lhs, const Vector3& rhs)->Vector3;
+
+		
 	public:
 		Vector3(const float x, const float y, const float z)
 			: x_{ x },
@@ -29,7 +31,7 @@ namespace Math
 		auto SetY(const float y) -> void { y_ = y; }
 		auto SetZ(const float z) -> void { z_ = z; }
 
-		static auto Zero()->Vector3 { return { 0,0,0 }; }
+		static auto Zero()->Vector3 { return { 0.0f,0.0f,0.0f }; }
 		static auto Distance(const Vector3& vector1, const Vector3& vector2) -> float;
 		auto Distance(const Vector3& other) const -> float;
 		auto Magnitude() const -> float;
@@ -48,6 +50,21 @@ namespace Math
 		auto operator/=(const Vector3& rhs)->Vector3&;
 		auto operator*=(float rhs)->Vector3&;
 		auto operator/=(float rhs)->Vector3&;
+
+		Vector3(double, double, double) = delete;
+		Vector3(int, int, int) = delete;
+
+		auto SetX(double) -> void = delete;
+		auto SetY(double) -> void = delete;
+		auto SetZ(double) -> void = delete;
+		auto SetX(int) -> void = delete;
+		auto SetY(int) -> void = delete;
+		auto SetZ(int) -> void = delete;
+
+		auto operator*=(double)->Vector3& = delete;
+		auto operator/=(double)->Vector3& = delete;
+		auto operator*=(int)->Vector3& = delete;
+		auto operator/=(int)->Vector3& = delete;
 	private:
 		float x_;
 		float y_;
