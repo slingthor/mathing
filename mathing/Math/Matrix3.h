@@ -6,8 +6,6 @@ namespace math
 	{
 		friend auto operator *(const Matrix3& lhs, const Matrix3& rhs)->Matrix3;
 		friend auto operator *(const Vector3& lhs, const Matrix3& rhs)->Vector3;
-		auto operator ()(SIZE_T x, SIZE_T y) -> float&;
-		auto operator ()(SIZE_T x, SIZE_T y) const -> const float&;
 	public:
 		explicit Matrix3(
 			const float n00, const float n10, const float n20,
@@ -32,6 +30,8 @@ namespace math
 		auto Column(SIZE_T index) const->Vector3;
 		auto Determinant() const noexcept -> float;
 		auto Inverse() const noexcept ->Matrix3;
+		auto operator ()(SIZE_T x, SIZE_T y) -> float&;
+		auto operator ()(SIZE_T x, SIZE_T y) const -> const float&;
 
 	private:
 		float matrix[3][3];

@@ -36,6 +36,16 @@ namespace math
 		return { x, y, z };
 	}
 
+	auto Matrix3::operator()(SIZE_T x, SIZE_T y) -> float&
+	{
+		return matrix[x][y];
+	}
+
+	auto Matrix3::operator()(SIZE_T x, SIZE_T y) const -> const float&
+	{
+		return matrix[x][y];
+	}
+
 	auto Matrix3::Row(const SIZE_T index) const -> Vector3
 	{
 #if !PRODUCTION
